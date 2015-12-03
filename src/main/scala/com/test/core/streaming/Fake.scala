@@ -11,3 +11,9 @@ import org.apache.spark.streaming.StreamingContext
 object Fake {
   def fakecalc(): Double = 1.0
 }
+
+object HelloWorld {
+  def main(args: Array[String]) {
+    println("Hello, world!")
+  }
+}

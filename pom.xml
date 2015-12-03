@@ -82,6 +82,7 @@
     <dependency>
       <groupId>com.holdenkarau</groupId>
       <artifactId>spark-testing-base_2.10</artifactId>
+      <scope>test</scope>
       <version>1.4.1_0.1.1</version>
     </dependency>
 		<dependency>
