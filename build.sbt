@@ -13,9 +13,9 @@ lazy val root = (project in file(".")).
 	      "org.apache.spark" % "spark-core_2.10" % "1.5.2",
 				"org.apache.spark" % "spark-streaming_2.10" % "1.5.2",
   			"com.github.nscala-time" % "nscala-time_2.10" % "2.0.0",
-  			"org.scalatest" % "scalatest_2.10" % "2.2.4",
-  			"com.holdenkarau" % "spark-testing-base_2.10" % "1.4.1_0.1.1",
-  			"org.scalamock" % "scalamock-scalatest-support_2.10" % "3.2",
-  			"junit" % "junit" % "4.10"
+  			"org.scalatest" % "scalatest_2.10" % "2.2.4" % "test",
+  			"com.holdenkarau" % "spark-testing-base_2.10" % "1.4.1_0.1.1" % "test",
+  			"org.scalamock" % "scalamock-scalatest-support_2.10" % "3.2" % "test", 
+  			"junit" % "junit" % "4.10" % "test"
     	)
   )
