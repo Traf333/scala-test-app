@@ -1,0 +1,29 @@
+
+apply plugin: 'scala'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.scala-lang:scala-library:2.10.4'
+	compile 'org.apache.spark:spark-core_2.10:1.5.2'
+	compile 'org.apache.spark:spark-streaming_2.10:1.5.2'
+  compile 'com.github.nscala-time:nscala-time_2.10:2.0.0'
+  compile 'org.scalatest:scalatest_2.10:2.2.4'
+  compile 'com.holdenkarau:spark-testing-base_2.10:1.4.1_0.1.1'
+  compile 'org.scalamock:scalamock-scalatest-support_2.10:3.2'
+  testCompile 'junit:junit:4.10'
+}
+
