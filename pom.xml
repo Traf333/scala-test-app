@@ -217,6 +217,14 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
+        <configuration>
+        	<args>
+        		<arg>-Xfatal-warnings</arg>
+						<arg>-Xlint</arg>
+						<arg>-deprecation</arg>
+						<arg>-explaintypes</arg>
+        	</args>
+        </configuration>
           <executions>
             <execution>
               <id>scala-compile-first</id>
